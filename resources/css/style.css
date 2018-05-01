@@ -1,4 +1,8 @@
 
+/*Tamming"  Box Model With Reset*/
+
+
+/*Universal Style*/
 html{
   font-size:18px;
   font-family: Helvetica;
@@ -41,7 +45,6 @@ header img {
   top:9rem;
 }
 .headline h1{
-  border: 1px solid white;
   margin: 0.25rem 0;
 }
 h1{
@@ -50,32 +53,32 @@ h1{
 h4{
   font-size: 1rem;
 }
-
+/*Navigation Bar*/
 nav{
   background-color: firebrick;
   font-size: 1rem;
 }
 nav .container{
-  border: 1px solid white;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0.75rem 0;
 }
+ nav .mobile-nav {
+  display:none;
+}
 
+/*Menu*/
 .Menu{
   display: flex;
-  border: 1px solid black;
   justify-content: space-between;
-  height: 100%;
+  margin-top: 3rem;
 }
 .Menu span {
   background-color: black;
 }
 .product{
-  display: flex;
-  flex-direction: column;
   width: 30%;
-  padding: 3rem 0;
 }
 .product-image{
   display:flex;
@@ -89,15 +92,14 @@ nav .container{
   max-width: 8rem;
 }
 .description{
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   padding: 0.5rem 0;
 }
 
 .Info{
   display: flex;
   padding: 3rem 0;
-  border: 1px solid black;
   justify-content: space-between;
 }
 
@@ -107,12 +109,56 @@ nav .container{
   width: 35%;
 }
 .info .title {
-  display: flex;
-  justify-content: center;
   background-color: black;
+  padding: 1rem 0rem 1rem 2rem;
 }
 .detail{
-  display:flex;
-  justify-content: center;
   color: black;
+  padding-bottom: 4rem;
+}
+
+footer{
+  text-align: left;
+  padding: 5rem 0;
+  background-color: black;
+
+}
+/*Media*/
+@media only screen and (max-width: 1024px){
+  .product{
+    width: 47%;
+  }
+  .product.glasses {
+    display: none;
+  }
+nav .window{
+  display:none;
+}
+nav .mobile-nav{
+  display: block;
+  text-align: center;
+}
+}
+
+@media only screen and (max-width: 470px){
+.headline h4{
+  font-size: 0.77rem;
+}
+.headline h1{
+  font-size: 1rem;
+}
+.Banner{
+  height: 15rem;
+}
+.headline{
+  width: 100%;
+  top: 10rem;
+  padding: 2rem 1rem;
+}
+nav .mobile-nav{
+  display:block;
+}
+.Menu{
+  flex-wrap: wrap;
+}
 }
