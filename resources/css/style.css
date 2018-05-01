@@ -143,9 +143,11 @@ nav .mobile-nav{
 @media only screen and (max-width: 470px){
 .headline h4{
   font-size: 0.77rem;
+  border: 1px solid white;
 }
 .headline h1{
   font-size: 1rem;
+  font-weight:bold;
 }
 .Banner{
   height: 15rem;
@@ -153,12 +155,32 @@ nav .mobile-nav{
 .headline{
   width: 100%;
   top: 10rem;
-  padding: 2rem 1rem;
+  border: 1px solid white;
+  padding: 1rem 2rem;
 }
 nav .mobile-nav{
   display:block;
+  margin-top: 1.5rem;
 }
-.Menu{
+.product.watch{
+  display:none;
+}
+.product {
+  width: 90%;
+  margin: 0 auto;
+}
+.Info{
   flex-wrap: wrap;
+}
+.info{
+  width: 90%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.detail{
+  padding-bottom: 0.5rem;
+}
+footer{
+text-align:center;
 }
 }
